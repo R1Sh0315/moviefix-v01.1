@@ -24,6 +24,9 @@ code {
   height: 119px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .mf-h-upper-section {
@@ -97,6 +100,7 @@ code {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  padding-top: 11%;
 }
 
 /* card  */
@@ -185,6 +189,9 @@ code {
 }
 
 @media screen and (max-width: 600px) {
+  .mf-body-container{
+    padding-top: 29%;
+  }
   .mf-cc-cardlist-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -214,6 +221,9 @@ code {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
+  .mf-body-container{
+    padding-top: 19%;
+  }
   .mf-cc-cardlist-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
