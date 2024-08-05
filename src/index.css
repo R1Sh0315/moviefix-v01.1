@@ -27,6 +27,7 @@ code {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .mf-h-upper-section {
@@ -52,7 +53,7 @@ code {
   padding: 16px 0;
   display: flex;
 
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -78,14 +79,11 @@ code {
 
 .mf-h-lower-section::-webkit-scrollbar {
   display: none;
-  /* Hide scrollbar for WebKit-based browsers */
 }
 
 .mf-h-lower-section {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 /* body section  */
@@ -97,9 +95,7 @@ code {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
   padding-top: 11%;
 }
 
@@ -226,7 +222,7 @@ code {
   }
   .mf-cc-cardlist-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 12px;
     padding: 12px;
   }
