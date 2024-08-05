@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mf-lp-container {}
+
+.mf-header {
+  background-color: #242424;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mf-h-upper-section {
+  padding: 10px 16px 10px 10px;
+}
+
+/* movieFix-archLogo*/
+.mf-al {
+  color: #F0283C;
+  display: flex;
+  gap: 2px;
+
+}
+
+/* movieFix-archLogo-charaterBody */
+.mf-al-cb {
+  font-size: 25.28px;
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+}
+
+.mf-h-lower-section {
+  padding: 16px 0;
+  display: flex;
+
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mf-active-btn {
+  color: #F3F4F6 !important;
+  background-color: #F0283C !important;
+  transition-duration: 1s;
+}
+
+.mf-genre {
+  font-family: "Saira", sans-serif;
+  border: none;
+  padding: 6px 12px 6px 12px;
+  border-radius: 4px;
+  background-color: #484848;
+  color: #F5F5F5;
+  gap: 10px;
+  font-weight: 400;
+  margin: 0 9px;
+
+  white-space: nowrap;
+}
+
+.mf-h-lower-section::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for WebKit-based browsers */
+}
+
+.mf-h-lower-section {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* body section  */
+
+.mf-body-container {
+  background-color: #121212;
+  height: calc(100vh - 119px);
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* card  */
+
+.mf-cc-cardlist-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+.mf-cc-content::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for WebKit-based browsers */
+}
+
+
+.mf-cc-year {
+  color: #ffff;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  padding: 0 12px;
+}
+
+.mf-cc-card-content {
+  height: 222px;
+  width: 158px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.mf-c-img {
+  position: relative;
+  width: 158px;
+  height: 222px;
+}
+
+.mf-c-title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffff
+}
+
+.mf-c-rating {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: #ffff
+}
+
+.mf-movie-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  width: 100%;
+  -webkit-box-shadow: inset -2px 22px 0px 44px rgba(36, 36, 36, 0.71);
+  -moz-box-shadow: inset -2px 22px 0px 44px rgba(36, 36, 36, 0.71);
+  box-shadow: inset -2px 22px 0px 44px rgba(36, 36, 36, 0.71);
+}
+
+.t-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.mf-cc-container{
+  height: calc(100% - 10px);
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@media screen and (max-width: 600px) {
+  .mf-cc-cardlist-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+    padding: 12px;
+  }
+
+
+  .mf-cc-container{
+    overflow: scroll;
+    height: calc(100% - 95px);
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .test-body {
+    font-size: 14pt;
+    background-color: lightblue;
+    height: 542px;
+    overflow: scroll;
+  }
+
+  .mf-cc-card-content{
+    width: 100% !important;
+
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .mf-cc-cardlist-container {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .mf-cc-card-content{
+    width: 100% !important;
+
+  }
+
+  .mf-cc-container{
+    overflow: scroll;
+    height: calc(100% - 95px);
+  }
+}
