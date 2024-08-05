@@ -1,4 +1,4 @@
-# moviefix
+# Moviefix
 
 ## To run in Local 
 
