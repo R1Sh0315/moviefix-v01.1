@@ -27,7 +27,7 @@ const useFetchMovies = (year, genre, yearList) => {
                     acc[yearList[idx]] = res.data.results;
                     return acc;
                 }, {});
-
+                console.log(moviesByYearData[2015][0].vote_average)
                 setMoviesByYear(moviesByYearData);
 
             } catch (error) {

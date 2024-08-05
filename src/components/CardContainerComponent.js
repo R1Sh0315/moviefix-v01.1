@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { SharedContext } from '../hooks/SharedContext';
 import useFetchMovies from '../hooks/useFetchMovies';
+import Rating from './StarComponent';
 
 const genres = {
     All: '',
@@ -55,7 +56,7 @@ const CardContainerComponent = () => {
                     >
                         <div className='mf-movie-details'>
                             <div className='mf-c-title'>{movieDetail.title.length > 13 ? movieDetail.title.slice(0, 13) + '...' : movieDetail.title}</div>
-                            <div className='mf-c-rating'>{movieDetail.vote_average}</div>
+                            <div className='mf-c-rating'><Rating val={movieDetail.vote_average} /></div>
                         </div>
                     </div>
                 ))}

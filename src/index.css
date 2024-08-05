@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,7 +13,11 @@ code {
     monospace;
 }
 
-.mf-lp-container {}
+
+.star-container{
+  font-size: 12px;
+  color: #F9E400;
+}
 
 .mf-header {
   background-color: #242424;
@@ -38,7 +41,7 @@ code {
 /* movieFix-archLogo-charaterBody */
 .mf-al-cb {
   font-size: 25.28px;
-  font-family: "Amaranth", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
 
@@ -178,14 +181,11 @@ code {
   height: calc(100% - 10px);
   overflow: scroll;
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 @media screen and (max-width: 600px) {
   .mf-cc-cardlist-container {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: auto auto;
     gap: 12px;
@@ -195,11 +195,8 @@ code {
 
   .mf-cc-container{
     overflow: scroll;
-    height: calc(100% - 95px);
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
   }
 
   .test-body {
@@ -218,7 +215,6 @@ code {
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
   .mf-cc-cardlist-container {
-    border: 1px solid green;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 12px;
@@ -230,8 +226,4 @@ code {
 
   }
 
-  .mf-cc-container{
-    overflow: scroll;
-    height: calc(100% - 95px);
-  }
 }
